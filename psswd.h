@@ -2,7 +2,8 @@
 using namespace std;
 bool psswd(){
 	int i = 0;
-	string psswd = "Melina";
+	//Put your desired password in here
+	string psswd = "placeholder";
 	string input;
 
 	while( psswd != input && i < 3){
