@@ -7,3 +7,5 @@ A password engine written in C++, which you can use by putting
 	#include"psswd.h"
 
 in your program's header. It outputs a boolean value.
+
+There's a file 'test.cpp', which showcases how it would work.
