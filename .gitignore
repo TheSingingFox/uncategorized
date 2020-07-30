@@ -32,3 +32,6 @@
 *.app
 
 *~
+
+# Folder with binaries
+bin/
