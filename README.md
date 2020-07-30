@@ -1,7 +1,7 @@
 # uncategorized
 If I've written it and I don't have a purpose or repository for it, it goes here.
 
-There's a makefile that creates a bin/ folder and compiles some scripts in there.
+There's a makefile that creates a bin/ folder and compiles some of the scripts in there.
 Just run
 
 	make
