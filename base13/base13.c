@@ -6,7 +6,9 @@ int main() {
   int input2;
   char operation;
   int num;
-  int solution;
+  int num2;
+  int solution1;
+  char solution2;
 
   printf("Do you want to convert a number (=) or add (+), subtract (-), multiply (*) or divide (/) two?\n");
   scanf("%c", &operation);
@@ -32,8 +34,21 @@ int main() {
   }
       
 
-  solution = (num / 13) * 10 + num % 13;
+  solution1 = num / 13;
+  num2 = num % 13;
+  if(num2 == 12) {
+    solution2 = 'C';
+  } else if(num2 == 11) {
+    solution2 = 'B';
+  } else if(num2 == 10) {
+    solution2 = 'A';
+  } else if(num2 == 0) {
+    solution2 = '0';
+  } else {
+    solution1 = solution1 * 10 + num2;
+    solution2 = ' ';
+  }
 
-  printf("%d\n", solution);
+  printf("%d%c\n", solution1, solution2);
   return 0;
 }
