@@ -34,6 +34,10 @@ int main() {
   }
       
 
+  /* convert the calculator's output to base13 
+     The conversion is done in two steps: first, the first numeral is decided upon by dividing the calculator's output by 13. This function produces an integer.
+     Then the second numeral is defined as output modulo 13. But because this can be bigger than 9, we need it to print A, B or C sometimes. This function produces a character.
+     The final solution is produced by concatenating the integer from the first operation and the character from the second one. Therefore the final  output is a string, not a number.*/
   solution1 = num / 13;
   num2 = num % 13;
   if(num2 == 12) {
